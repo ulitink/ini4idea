@@ -1,0 +1,25 @@
+<idea-plugin version="2">
+  <name>Ini4Idea</name>
+  <description>.ini files support</description>
+  <version>0.1</version>
+  <vendor>Konstantin Ulitin</vendor>
+  <idea-version since-build="8000"/>
+
+  <application-components>
+    <component>
+      <implementation-class>ini4idea.utils.IniLoader</implementation-class>
+    </component>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <syntaxHighlighter key="Ini" implementationClass="ini4idea.highlighter.IniSyntaxHighlighter"/>
+  </extensions>
+</idea-plugin>
