@@ -8,6 +8,6 @@ import ini4idea.IniFileType;
  */
 public class IniElementType extends IElementType {
   public IniElementType(String debugName) {
-    super(debugName, IniFileType.INI_FILE_TYPE.getLanguage());
+    super(debugName, IniFileType.INSTANCE.getLanguage());
   }
 }

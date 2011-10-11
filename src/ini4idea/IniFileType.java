@@ -11,7 +11,8 @@ import javax.swing.*;
  * @author Konstantin Ulitin
  */
 public class IniFileType extends LanguageFileType {
-  public static final IniFileType INI_FILE_TYPE = new IniFileType();
+  public static final IniFileType INSTANCE = new IniFileType();
+  public static final String DEFAULT_EXTENSION = "ini";
   
   private IniFileType() {
     super(IniLanguage.INI_LANGUAGE);
@@ -32,7 +33,7 @@ public class IniFileType extends LanguageFileType {
   @NotNull
   @Override
   public String getDefaultExtension() {
-    return "ini";
+    return DEFAULT_EXTENSION;
   }
 
   @Override

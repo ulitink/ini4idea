@@ -5,11 +5,11 @@
   <vendor>Konstantin Ulitin</vendor>
   <idea-version since-build="8000"/>
 
-  <application-components>
-    <component>
-      <implementation-class>ini4idea.utils.IniLoader</implementation-class>
-    </component>
-  </application-components>
+  <!--<application-components>-->
+    <!--<component>-->
+      <!--<implementation-class>ini4idea.utils.IniLoader</implementation-class>-->
+    <!--</component>-->
+  <!--</application-components>-->
 
   <project-components>
     <!-- Add your project components here -->
@@ -20,6 +20,7 @@
   </actions>
 
   <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="ini4idea.IniFileTypeFactory"/>
     <syntaxHighlighter key="Ini" implementationClass="ini4idea.highlighter.IniSyntaxHighlighter"/>
   </extensions>
 </idea-plugin>

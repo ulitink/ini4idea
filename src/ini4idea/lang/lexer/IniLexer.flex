@@ -15,28 +15,6 @@ import ini4idea.lang.IniTokenTypes;
 
 %function advance
 
-%{
-/*
-  public void reset(CharSequence buffer, int start, int end,int initialState){
-    zzBuffer = buffer;
-    zzBufferArray = com.intellij.util.text.CharArrayUtil.fromSequenceWithoutCopying(buffer);
-    zzCurrentPos = zzMarkedPos = zzStartRead = start;
-    zzPushbackPos = 0;
-    zzAtEOF  = false;
-    zzAtBOL = true;
-    zzEndRead = end;
-    yybegin(initialState);
-  }
-
-  public final int getTokenStart(){
-    return zzStartRead;
-  }
-  public final int getTokenEnd(){
-    return getTokenStart() + yylength();
-  }
-*/
-%}
-
 %eof{ return;
 %eof}
 
