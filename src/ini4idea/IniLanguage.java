@@ -6,7 +6,7 @@ import com.intellij.lang.Language;
  * @author Konstantin Ulitin
  */
 public class IniLanguage extends Language {
-  public static final IniLanguage INI_LANGUAGE = new IniLanguage();
+  public static final IniLanguage INSTANCE = new IniLanguage();
   private IniLanguage() {
     super("Ini");
   }

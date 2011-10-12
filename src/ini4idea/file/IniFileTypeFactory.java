@@ -1,7 +1,8 @@
-package ini4idea;
+package ini4idea.file;
 
 import com.intellij.openapi.fileTypes.FileTypeConsumer;
 import com.intellij.openapi.fileTypes.FileTypeFactory;
+import ini4idea.file.IniFileType;
 import org.jetbrains.annotations.NotNull;
 
 /**

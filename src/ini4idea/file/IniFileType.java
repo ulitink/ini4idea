@@ -1,8 +1,8 @@
-package ini4idea;
+package ini4idea.file;
 
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.openapi.util.IconLoader;
-import com.intellij.util.Icons;
+import ini4idea.IniLanguage;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -15,7 +15,7 @@ public class IniFileType extends LanguageFileType {
   public static final String DEFAULT_EXTENSION = "ini";
   
   private IniFileType() {
-    super(IniLanguage.INI_LANGUAGE);
+    super(IniLanguage.INSTANCE);
   }
 
   @NotNull

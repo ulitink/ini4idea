@@ -1,7 +1,7 @@
 package ini4idea.lang.parser;
 
 import com.intellij.psi.tree.IElementType;
-import ini4idea.IniFileType;
+import ini4idea.file.IniFileType;
 
 /**
  * @author Konstantin Ulitin
