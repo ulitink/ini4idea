@@ -21,6 +21,7 @@ public final class IniTokenTypes {
   public static final TokenSet WHITESPACES = TokenSet.create(WHITESPACE);
   public static final TokenSet COMMENTS = TokenSet.create(COMMENT);
   public static final TokenSet STRING_LITERALS = TokenSet.EMPTY;
+  public static final TokenSet SECTIONS = TokenSet.create(SECTION);
 
   public static final IniElementType ASSIGN = new IniElementType("ASSIGN"); //TODO TokenType ElementType term difference ??
   public static final IniElementType LVAL = new IniElementType("LVAL");
